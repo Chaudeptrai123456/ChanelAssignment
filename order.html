@@ -1,0 +1,248 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="order.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-logo">
+        <div></div>
+        <h3 onclick="goToHome()">CHANEL</h3>
+        <div class="header-symbols">
+          <span class="icon-search"><i class="fa fa-search"></i></span>
+          <span class="icon-fav"><i class="fa fa-star"></i></span>
+        </div>
+      </div>
+    </header>
+    <input type="checkbox" id="price-size" />
+
+    #price-size:checked ~ .order { display: block; transform: translateX(0); }
+    <main class="main">
+      <div class="content1-container">
+        <div class="content1-container-tab">
+          <div class="content1-container-tab-icon">
+            <span style="display: flex">
+              <svg width="25" height="25" viewBox="0 0 20 28" fill="none">
+                <circle
+                  cx="10"
+                  cy="10"
+                  r="8"
+                  stroke="black"
+                  stroke-width="1.5"
+                />
+                <circle cx="10" cy="10" r="2" fill="black" />
+                <line
+                  x1="10"
+                  y1="18"
+                  x2="10"
+                  y2="26"
+                  stroke="black"
+                  stroke-width="1.5"
+                />
+                <line
+                  stroke="black"
+                  stroke-width="1.5"
+                  x1="6"
+                  y1="26"
+                  x2="14"
+                  y2="26"
+                />
+              </svg>
+              THỬ
+            </span>
+          </div>
+        </div>
+        <div class="content1-container-image-list">
+          <div class="product-images">
+            <div class="product-media">
+              <img src="./images/image82.avif" />
+            </div>
+            <div class="product-media">
+              <img src="./images/image91.webp" />
+            </div>
+            <div class="product-media">
+              <img src="./images/image92.webp" />
+            </div>
+            <div class="product-media">
+              <img src="./images/image93.webp" />
+            </div>
+          </div>
+        </div>
+        <div class="content1-container-price">
+          <div class="content1-container-price-title">
+            <p>Nhẫn COCO CRUSH</p>
+          </div>
+          <div class="content1-container-price-p">
+            <p>Mô-típ chần quả trám, phiên bản mini, VÀNG BEIGE 18K</p>
+            <p
+              class="content1-container-price-detail"
+              style="margin-top: 5px; margin-bottom: 15px"
+            >
+              Xem chi tiết
+            </p>
+            <p class="content1-container-price-thamchieu">Tham chiếu J11785</p>
+            <p style="font-size: 25">53 230 000 VND*</p>
+            <div class="content1-container-price-size">
+              <label for="price-size" class="price-size-label"
+                >LIÊN HỆ CHÚNG TÔI</label
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content2-container">
+        <div class="product-info">
+          <div class="product-info-title">THÔNG TIN VỀ SẢN PHẨM</div>
+          <div class="product-info-description">
+            <strong>MÔ TẢ</strong>
+            <p>Nhẫn COCO CRUSH cỡ nhỏ bằng vàng vàng 18K</p>
+          </div>
+          <div class="product-info-description">
+            <strong>THÔNG TIN KHÁC</strong>
+            <p>
+              Nhẫn COCO CRUSH hiện có 3 kích cỡ. Các sáng tạo này được thiết kế
+              để có thể phối, kết hợp với nhau, từ đó tạo nên đa dạng phong cách
+            </p>
+          </div>
+          <div class="product-info-description">
+            <strong>BỘ SƯU TẬP</strong>
+            <p>
+              Lấy cảm hứng từ mô-típ chần quả trám, biểu tượng của Thương hiệu
+              từ năm 1955, bộ sưu tập COCO CRUSH thể hiện tinh thần của một ý
+              tưởng được hiện thực hóa. Mỗi sáng tạo đều kết hợp 4 yếu tố thiết
+              kế hết sức đặc trưng của bộ sưu tập: hình vuông dáng cong lấy cảm
+              hứng từ mô-típ chần quả trám, những đường cắt gọn gàng trên chất
+              liệu vàng 18K, các cạnh viền hình vỏ sò tạo nên vẻ hoàn thiện chạm
+              vào cảm xúc và phong cách bo tròn gợi lên đường nét cong của chiếc
+              túi xách 2.55. Các thiết kế có thể được kết hợp và phối chồng lớp
+              để tạo nên một vẻ quyến rũ kiên định, độc nhất.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="overlay-order"></div>
+    <div class="order">
+      <label class="btn-clode-order" for="price-size">X</label>
+      <div class="order-product-info">
+        <div class="order-product-info-image">
+          <div class="product-media">
+            <img src="./images/image80.avif" />
+          </div>
+        </div>
+        <div class="order-product-info-description">
+          <div class="order-product-info-description-title">
+            NHẪN COCO CRUSH
+          </div>
+          <div class="order-product-info-description1">
+            Mô-típ quả trám , cỡ nhỏ , vàng vàng 18K<br />
+            Tham chiếu J10571
+          </div>
+          <div class="order-product-info-description-price">
+            93 930 000 VND <sup>*</sup>
+          </div>
+          <div class="order-product-info-description-price-dexuat">
+            <sup>*</sup> Giá đề xuất
+          </div>
+        </div>
+      </div>
+      <div class="order-product-lienhe">
+        <div class="lienhe-email">
+          <h3>GỬI EMAIL</h3>
+          <p>Liên hệ với bộ phận chăm sóc khách hàng qua email</p>
+          <input type="checkbox" id="input1024" style="display: none" />
+          <label for="input1024" class="email-label" onClick="goToPaying()">GỬI EMAIL</label>
+        </div>
+        <div class="lienhe-boutique"></div>
+        <div class="lienhe-FAQ"></div>
+      </div>
+      <div class="order-product-lienhe">
+        <div class="lienhe-email">
+          <h3>TÌM BOUTIGUE</h3>
+          <p>Danh sách Boutigue gần nhất</p>
+          <input type="checkbox" id="input1024" style="display: none" />
+          <label for="input1024" class="email-label">XEM BẢN ĐỒ</label>
+        </div>
+        <div class="lienhe-boutique"></div>
+        <div class="lienhe-FAQ"></div>
+      </div>
+      <div class="order-product-lienhe">
+        <div class="lienhe-email">
+          <h3>FAQ</h3>
+          <p>Câu hỏi thường gặp</p>
+          <input type="checkbox" id="input1024" style="display: none" />
+          <label for="input1024" class="email-label">XEM MỤC FAQ</label>
+        </div>
+        <div class="lienhe-boutique"></div>
+        <div class="lienhe-FAQ"></div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footer-name" onclick="goToHome()">Chanel</div>
+      <div>
+        <div class="footer-grid">
+          <div class="footer-col">
+            <h4>KHÁM PHÁ CHANEL.COM</h4>
+            <ul>
+              <li>Haute Couture</li>
+              <li>Thời trang</li>
+              <li>Trang sức Cao cấp</li>
+              <li>Trang sức</li>
+              <li>Đồng hồ</li>
+              <li>Mắt kính</li>
+              <li>Nước hoa</li>
+              <li>Trang điểm</li>
+              <li>Chăm sóc da</li>
+              <li>Sơ đồ trang</li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>DỊCH VỤ TẠI CỬA HÀNG</h4>
+            <ul>
+              <li>Hệ thống cửa hàng</li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>THƯƠNG HIỆU CHANEL</h4>
+            <ul>
+              <li>Báo cáo doanh nghiệp</li>
+              <li>Chống hàng giả</li>
+              <li>Kết quả tài chính</li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>DỊCH VỤ TRỰC TUYẾN</h4>
+            <ul>
+              <li>Nghề nghiệp</li>
+              <li>Bảo mật</li>
+              <li>Pháp lý</li>
+              <li>Bảo dưỡng &amp; Các dịch vụ</li>
+              <li>Câu hỏi thường gặp</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="content1-container-introduction-size">
+      <div class="content1-container-introduction-size-title">
+        HƯỚNG DẪN KÍCH CỠ
+      </div>
+      <div class="content1-container-introduction-size-figure">
+        <div class="size-ring">ĐO KÍCH CỠ NHẪN SẮN CÓ</div>
+        <div class="size-finger">ĐO NGÓN TAY CỦA BẠN</div>
+      </div>
+      <div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+      </div>
+      <div>
+        <div>1</div>
+        <div>2</div>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>

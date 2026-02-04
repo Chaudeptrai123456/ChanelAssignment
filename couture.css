@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+* {
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  position: fixed;
+  z-index: 699;
+}
+
+.header-logo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 10vh;
+  cursor: pointer;
+  z-index: 100;
+}
+.content {
+  gap: 2vh;
+  margin-top: 10vh;
+}
+.header-symbols {
+  font-size: 20px;
+}
+.icon-search,
+.icon-fav {
+  margin-left: 8px;
+  cursor: pointer;
+  font-weight: normal;
+}
+.header-nav {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  color: black;
+  background-color: white;
+  margin-top: 10vh;
+}
+.header-nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  width: 90%;
+  padding: 0;
+}
+.header-nav ul li {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+}
+.footer {
+  width: 100%;
+  position: relative;
+  min-height: 15vh;
+  background-color: white;
+  border-top: 1px solid #e0e0e0;
+  position: sticky;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  z-index: 0;
+}
+.footer {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.footer-name {
+  font-size: 50px;
+  font-weight: 600;
+  padding-top: 20vh;
+  padding-bottom: 5vh;
+}
+.footer {
+  position: sticky;
+  width: 100%;
+  min-height: 20vh;
+  background-color: black;
+  color: white;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 60px;
+}
+
+.footer-col h4 {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col ul li {
+  font-size: 14px;
+  color: #bbb;
+  margin-bottom: 12px;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.footer-col ul li:hover {
+  color: #fff;
+}
+.main {
+  position: relative;
+  height: 2000px;
+  top: 16vh;
+  z-index: 50;
+  background-color: white;
+}
+.title {
+  font-size: 30px;
+  font-family: "Didot", "Playfair Display", "Bodoni MT", serif;
+  font-weight: 200;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.title h2 {
+  font-size: 50px;
+  margin: 15px;
+}
+.title p {
+  margin-bottom: 50px;
+  font-size: 14px;
+}
+.content {
+  display: grid;
+  grid-template-columns: repeat(6, 1.2fr);
+  gap: 90px;
+  text-align: center;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.content-item {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  padding: 1px;
+  min-width: 180px;
+  min-height: 25vh;
+}
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

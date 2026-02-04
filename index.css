@@ -1,0 +1,371 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+* {
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  position: sticky;
+  padding-bottom: 5vh;
+}
+
+.header-logo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 10vh;
+  z-index: 1000;
+  cursor: pointer;
+}
+.content {
+  gap: 2vh;
+  margin-top: 10vh;
+}
+.header-symbols {
+  font-size: 20px;
+}
+.icon-search,
+.icon-fav {
+  margin-left: 8px;
+  cursor: pointer;
+  font-weight: normal;
+}
+.header-nav {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  color: black;
+  background-color: white;
+  margin-top: 10vh;
+  min-height: 5vh;
+}
+.header-nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  width: 90%;
+  padding: 0;
+}
+.header-nav ul li {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.content-collection {
+  width: 100% ;
+  height: 70vh;
+  font-size: 24px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 50vh;
+  align-items: center;
+  gap: 5vh;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.9);
+  color: white;
+}
+.content-collection {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.content-collection button {
+  border: 1.5px solid black;
+  padding: 14px 36px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+.fashion {
+  background-image: url("./images/image1.webp");
+}
+.perfume {
+  background-image: url("./images//image2.webp");
+}
+.jewelry {
+  background-image: url("./images//image3.webp");
+}
+.makeup {
+  background-image: url("./images//image4.webp");
+}
+.watch {
+  background-image: url("./images//image6.webp");
+}
+.glasses {
+  background-image: url("./images//image5.webp");
+}
+.advance-jewelry {
+  background-image: url("./images/image7.webp");
+}
+.skin-care {
+  background-image: url("./images/image8.webp");
+}
+.thoi-trang {
+  background-image: url("./images/image9.webp");
+}
+
+.content-footer {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  z-index: 100;
+}
+.content-footer-item {
+  display: flex;
+  flex: 3;
+  width: 100%;
+  font-size: large;
+  width: 100%;
+  height: 100%;
+  /* opacity: 0.6; */
+  justify-content: end;
+  align-items: first baseline;
+  background-color: white;
+}
+.content-footer-empty {
+  flex: 2;
+}
+.content-footer-item img {
+  text-decoration: none;
+  color: black;
+  font-size: large;
+  inline-size: 1px;
+}
+.content-footer-item p {
+  line-height: 3vh;
+}
+.content-footer-item input {
+  width: 100%;
+  padding: 10px 14px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  box-sizing: border-box;
+}
+.search-box {
+  display: flex;
+}
+.footer {
+  width: 100%;
+  min-height: 15vh; 
+  background-color: white;
+  border-top: 1px solid #e0e0e0;
+  position: sticky;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+.footer {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.footer-name {
+  font-size: 50px;
+  font-weight: 600;
+  padding-top: 15vh;
+  padding-bottom: 15vh;
+}
+.footer {
+  position: sticky;
+  z-index: -1000;
+  width: 100%;
+  min-height: 20vh;
+  background-color: black;
+  color: white;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 60px;
+}
+
+.footer-col h4 {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col ul li {
+  font-size: 14px;
+  color: #bbb;
+  margin-bottom: 12px;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.footer-col ul li:hover {
+  color: #fff;
+}
+
+.mega-menu {
+  position: fixed;
+  top: 13vh;
+  width: 100%;
+  height: 70vh;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  z-index: 999;
+  justify-content: space-evenly;
+  /* animation state */
+  transform: translateY(-30px);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.35s ease;
+}
+.mega-sidebar {
+  position: relative;
+  left: 1vh;
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+  align-items: center;
+  justify-content: center;
+  left: 20px;
+}
+.mega-sidebar-img {
+  width: 25vh;
+  height: 35vh;
+}
+.mega-fashion-content {
+  flex: 3;
+  padding: 20px;
+  position: relative;
+  right: 80px;
+  margin-top: 9vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 20px;
+  padding: 20px 40px;
+}
+.mega-sidebar p {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 700;
+}
+.mega-fashion-item ul {
+  font-size: clamp(12px, 0.9vw, 14px);
+}
+.mega-fashion-item {
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+}
+.mega-fashion-item li {
+  list-style: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: black;
+  cursor: pointer;
+  transition: color 0.2s ease;
+  padding-top: 20px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+.mega-overlay {
+  position: fixed;
+  top: 15vh;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(60, 60, 60, 0.6);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  z-index: 998;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+.mega-close-btn {
+  position: fixed;
+  width: 80px;
+  height: 80px;
+  background-color: white;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1000;
+  right: 5vh;
+}
+.mega-overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+.fashion-active {
+  font-weight: 700;
+  border-bottom: 2px solid black;
+  padding-bottom: 8px;
+}
+.mega-menu.active {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.container-couture {
+  margin-top: 15vh;
+  height: 140vh; /* tạo không gian scroll */
+}
+
+
+.couture-content-title {
+  position: absolute;
+  bottom: 15vh;
+  width: 100%;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+  font-weight: 300;
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.9);
+  z-index: 10;
+}
+.coueture-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+ 
